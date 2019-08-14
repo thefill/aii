@@ -1,0 +1,55 @@
+            throw new Aii(this, `Error message for level ${this.lvl}`);
+                  ^
+Aii: Error message for level 5
+    at NestedErrorThrow.throw (/home/fill/Documents/aii/src/classes/aii/aii.class.ts:45:19)
+    at NestedErrorThrow.throw (/home/fill/Documents/aii/src/classes/aii/aii.class.ts:47:25)
+    at NestedErrorThrow.throw (/home/fill/Documents/aii/src/classes/aii/aii.class.ts:47:25)
+    at NestedErrorThrow.throw (/home/fill/Documents/aii/src/classes/aii/aii.class.ts:47:25)
+    at NestedErrorThrow.throw (/home/fill/Documents/aii/src/classes/aii/aii.class.ts:47:25)
+    at NestedErrorThrow.throw (/home/fill/Documents/aii/src/classes/aii/aii.class.ts:47:25)
+    at Object.<anonymous> (/home/fill/Documents/aii/src/classes/aii/aii.class.ts:52:14)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Module.m._compile (/home/fill/Documents/aii/node_modules/ts-node/src/index.ts:473:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+
+TODO: from above to below
+
+--------------------------------------------------------------------------------
+
+ERROR: Some message
+LOCATION: NestedErrorThrow.throw | line 45 | column 19
+FILE: /home/fill/Documents/aii/src/classes/aii/aii.class.ts
+
+--------------------------------------------------------------------------------
+
+TRACE ↴
+      ⤷⟶[✔] Module._extensions..js | line 45 | column 19
+      ↓      /home/fill/Documents/aii/src/classes/aii/aii.class.ts
+      ⤷⟶[✔] Module.m._compile | line 45 | column 19
+      ↓      /home/fill/Documents/aii/src/classes/aii/aii.class.ts
+      ⤷⟶[✔] Module._compile | line 45 | column 19
+      ↓      /home/fill/Documents/aii/src/classes/aii/aii.class.ts
+      ⤷⟶[✔] Object.<anonymous> | line 45 | column 19
+      ↓      /home/fill/Documents/aii/src/classes/aii/aii.class.ts
+      ⤷⟶[✔] Module._compile | line 45 | column 19
+      ↓      /home/fill/Documents/aii/src/classes/aii/aii.class.ts
+      ⤷⟶[x] NestedErrorThrow.throw | line 45 | column 19
+             /home/fill/Documents/aii/src/classes/aii/aii.class.ts
+
+--------------------------------------------------------------------------------
+
+SNAPSHOT ↴
+     11  |
+     12  |   }
+     13  |
+     14  |   public throw() {
+     15  |       if (this.lastLvl) {
+     16  x           throw new Aii(this, `Error message for level ${this.lvl}`);
+     17  |                 ^
+     18  |       }
+     19  |       // try {
+     20  |       this.child.throw();
+     21  |       // } catch (error) {
+     22  |
+
+--------------------------------------------------------------------------------
