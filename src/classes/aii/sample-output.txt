@@ -17,7 +17,7 @@ TODO: from above to below
 --------------------------------------------------------------------------------
 
 ERROR: Some message
-LOCATION: NestedErrorThrow.throw | line 45 | column 19
+ORIGIN: NestedErrorThrow.throw | line 45 | column 19
 FILE: /home/fill/Documents/aii/src/classes/aii/aii.class.ts
 
 --------------------------------------------------------------------------------
